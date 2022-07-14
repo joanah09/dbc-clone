@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
-function ContactForm() {
-    const [formData, setFormData] = useState({
+function ContactForm() {   
+    const initialState = {
         name: "",
         email: "",
         message: "",
-    })
+    }
 
+    const [formData, setFormData] = useState(initialState)
     function handleChange(event) {
         const {name, value} = event.target
         setFormData(prevState => {
@@ -18,8 +19,9 @@ function ContactForm() {
     }
 
     function handleSubmit(event) {
-        // event.preventDefault()
+        event.preventDefault()
         console.log(formData)
+        setFormData({...initialState})
     }
 
     return (

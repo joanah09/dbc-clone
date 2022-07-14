@@ -4,7 +4,7 @@ import data from "../../../data-test";
 
 
 function Header() {
-    console.log(window.location.pathname)
+    // console.log(window.location.pathname)
     const banner = data.banner.images.map(item => {
         let url = window.location.pathname 
         let urlBanner = <HeaderBanner key={item.alt}
