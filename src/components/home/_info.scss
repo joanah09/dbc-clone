@@ -1,0 +1,49 @@
+.info {
+    @extend .container-width;
+    article {
+        display: inline-block;
+        .logo {
+            max-width: 199px;
+        }
+        @include bp(tab) {
+          width: 50%; 
+          .logo {
+            max-width: 100%;
+          } 
+        }
+        
+        img {
+            display: none;
+            @include bp(tab) {
+                display: block;
+            }
+        }
+    }
+    p {
+        font-weight: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        @include bp(tab) {
+            padding: 0 85px 10px 0;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .info-btn {
+        text-decoration: none;
+        color: $font-dark;
+        font-weight: 700;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include bp(tab) {
+              width: 225px;  
+            }
+            height: 58px;  
+            border: 2px solid $border-dark;
+            border-radius: 30px;
+        }
+    }
+}

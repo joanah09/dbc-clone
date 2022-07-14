@@ -1,0 +1,73 @@
+.highlights {
+    padding: 1em 0.5em;
+    background-color: $bg-dark;
+    article {
+        @extend .container-width;
+        figure {
+            margin: 1.5em 0;
+            text-align: center;
+            width: 50%;
+            display: inline-block;
+            @include bp(tab) {
+                margin: 1em 1.5em;
+                width: 100%;
+                text-align: center;
+            }
+            
+            img {
+                height: 60px;
+                width: 60px;
+                margin-bottom: 10px;
+            }
+            figcaption {
+                color: $white;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                @include bp(tab) {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                
+               
+            }
+        }
+    }
+
+    .content {   
+        @extend .container-width;
+        display: block;
+        padding-top: 1.5em;
+        text-align: center;
+        @include bp(tab) {
+            padding-top: 0;
+        }
+        &-title {
+            span {
+                color: $font-hover;
+                font-family: $tinos;
+                font-style: italic;
+                font-size: 22px;
+                line-height: 30px;
+                @include bp(tab) {
+                    font-size: 24px;
+                    line-height: 34px;
+                }
+                
+            }
+            h2 { 
+                margin-top: 0;
+                color: $white;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                @include bp(tab) {
+                    margin-bottom: 81px;
+                    font-size: 48px;
+                    line-height: 56px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+.brands {
+    background-color: $bg-light;
+    article {
+        @extend .container-width;
+        display: block;
+        padding: 40px 0;
+        max-width: 880px;
+        border-top: 1px solid $divider;
+        h4 {
+            margin: 0;
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            color: $font-gray2;
+            @include bp(tab) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    &-logo {
+        display: flex;
+        margin-top: 2em;
+        align-items: center;
+        flex-wrap: wrap;
+        @include bp(tab) {
+            flex-wrap: unset;
+        }
+        .logo-link {
+            margin-right: auto;
+            text-align: center;
+            flex: 0 1 50%;
+            @include bp(tab) {
+                flex: 0 1 50%;
+            }
+            img {
+                @include bp(tab) {
+                    max-width: 196px;
+                }
+                
+            }
+        }
+    }
+}

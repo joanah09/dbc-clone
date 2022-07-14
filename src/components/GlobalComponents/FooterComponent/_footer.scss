@@ -1,0 +1,100 @@
+footer {
+    background-color: $bg-footer;
+    @include bp(m-desk) {
+        padding: 1em 1.2em;
+    }
+
+    @include bp(mob-sml) {
+        padding: 1em 1.2em;
+    }
+    
+    .footer-container {
+        align-items: flex-start;
+        padding: 2em 1em 1em;
+        @extend .container-width;
+        @include bp(tab) {
+            max-width: 1280px;
+        }  
+        &_content {
+            margin-bottom: 2em;
+            @include bp(tab) {
+                max-width: 28%;
+                margin-right: 1.3em;
+            }
+            @include bp(m-desk) {
+                max-width: 35%;
+                margin-right: 5em;
+            }
+            p {
+                font-size: 13px;
+                line-height: 19px;
+                color: $font-footer;
+                @include bp(m-desk) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &_links {
+            @include bp(tab) {
+                display: flex;
+            }           
+            flex-direction: row;
+            align-items: flex-start;
+            .list {
+                display: block;
+                @include bp(tab) {
+                    padding-right: 1.3em;
+                }
+                @include bp(desk) {
+                    display: inline-block;
+                    padding-right: 3em;
+                }
+                h6 {
+                    position: relative;
+                    margin: 0 0 15px;
+                    
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $font-dark;
+              
+                }
+                ul {
+                    padding: 0;
+                    margin-bottom: 1em;
+                    border-bottom: 1px solid $footer-divider;
+                    @include bp(tab) {
+                        margin-bottom: 0;
+                        border-bottom: 0;
+                    }
+                    li {
+                    list-style: none;
+                        a {
+                        text-decoration: none;
+                        font-size: 13px;
+                        line-height: 34px;
+                        color: $font-footer;
+                        @include bp(m-desk) {
+                            font-size: 16px;
+                            line-height: 40px;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+        &-logo {
+            text-align: center;
+            img {
+                height: 37px;
+            }
+            @include bp(tab) {
+                text-align: left;
+                img {
+                    height: 23px;
+                }
+            }
+        }
+    }
+
+}

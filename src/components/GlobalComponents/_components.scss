@@ -1,0 +1,102 @@
+/** font **/
+$roboto: 'Roboto', sans-serif;
+$tinos: 'Tinos', serif;
+
+/** colors **/
+$white: #fff;
+$primary-color: #F55A5A;
+$light-gray: #e9e6e6;
+$border-gray: #F5F5F5;
+$border: #CCCCD1;
+$border-dark: #01093F;
+
+$font-gray: #918E9B;
+$font-gray2: #667085;
+$font-dark: #182F57;
+$font-hover: #E3AB63;
+$font-light-gray: #ABABAB;
+$font-footer: #979797;
+
+
+$divider: #EAECF0;
+$footer-divider: #E9E9E9;
+
+$bg-light: #F9F9F9;
+$bg-dark: #54565B;
+$bg-footer: #F0F0F0;
+$bg-nav: #FDFAF5;
+
+$slick-dots: #E3AB63;
+body {
+    margin: 0 auto;
+    font-family: $roboto;
+}
+
+.container-width {
+
+    @include bp(tab) {
+        display: flex;
+        align-items: center;
+        padding: 78px 1em;
+        margin: 0 auto;
+        max-width: 1111px;
+    }
+    
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 1em 1.2em;
+    @include bp(tab) {
+        padding: 1em 0;
+    }
+}
+
+article {
+    padding: 1em 0;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.hide {
+    max-height: 0;
+    margin: 0;
+    overflow-y: hidden;
+    transition: max-height 0.1s ease;  
+}
+
+.show {
+    max-height: 999px;
+    overflow-y: visible;
+    transition: max-height 0.5s linear;
+    background-color: $bg-footer;
+}
+
+.plus {
+    &:after {
+        content: "+";
+        position: absolute;
+        right: 3%;
+        top: -2px;
+        font-size: 18px;
+    }
+}
+
+.minus {
+    &:after {
+        @extend .plus;
+        content: "-";
+    }
+}

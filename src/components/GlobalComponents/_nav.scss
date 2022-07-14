@@ -1,0 +1,109 @@
+nav {
+    @extend .flex;    
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: $white;
+    color: $font-dark;
+    z-index: 2;
+    @include bp(tab) {
+        display: flex;
+        position: relative;
+        width: auto;
+        padding: 0 3em;
+        height: 88px;
+        justify-content: space-between;
+    }
+    .logo {
+        height: 28px;
+        margin-right: auto;
+        padding: 1.5em 1em;
+        @include bp(tab) {
+            height: auto;
+        }
+    }
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    //NAVBAR
+    ul {
+        display: block;
+        margin-left: auto;
+        @include bp(tab) {
+            display: flex;
+        }
+    li {
+            padding: 0.5em 0;
+            list-style: none;
+            font-size: 24px;
+            line-height: 32px;
+            @include bp(tab) {
+                padding: 0 1em;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            a {
+                color: $font-dark;
+                text-decoration: none;
+                transition: 0.13s;
+                &:hover {
+                    color: $font-hover;
+                    border-bottom: 2px solid $font-hover;
+                }
+            }
+        }
+    }
+
+    .for-mob {   
+        .menu {
+            position: fixed;        
+            top: 4.5em;
+            min-height: 100%;
+            width: 100%;
+            z-index: 1;
+            background: $bg-nav;
+            transition: 0.3s;
+            right: 0;
+        }
+        
+        .burger {
+            position: fixed;
+            top: 20px;
+            right: 5px;
+            z-index: 2;
+            cursor: pointer;
+            div {
+                margin: 6px 10px;
+                height: 3px;
+                width: 32px;
+                border-radius: 5px;
+                background: $border-dark;
+                transition: 0.2s;
+                &:nth-child(2) {
+                    transition: 0s;
+                }
+            }
+            &-top {
+                position: absolute;
+                transform: rotate(45deg);
+                top: 10px;
+            }
+            &-mid {
+                visibility: hidden;
+            }
+            &-bot {
+                transform: rotate(-45deg);
+            }
+        }
+    
+    }
+    .for-desk {
+        @include bp(tab) {
+            display: flex;
+        }
+    }
+
+}
