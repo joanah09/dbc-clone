@@ -150,15 +150,43 @@ export default {
                 "url": "/"
             },
             {
-                "alt": "Careers",
-                "image": "careers-banner.jpg",
-                "url": "/careers"
+                "alt": "About",
+                "image": "about-banner.jpg",
+                "url": "/about"
             },
             {
                 "alt": "Contact",
-                "image": "careers-banner.jpg",
+                "image": "contact-banner.jpg",
                 "url": "/contact"
             },
+        ]
+    },
+    "about": {
+        "content": [
+            {
+                "desc": "An easy, effective application and onboarding process to start your DBC journey",
+            },
+            {
+                "desc": "Understanding and flexibility that takes your wellbeing seriously"
+            },
+            {
+                "desc": "A simple, transparent process to define goals to fuel, recognise and reward your success"
+            },
+            {
+                "desc": "An inclusive culture with diversity across people, ideas, skills, and experiences"
+            },
+            {
+                "desc": "Options for hybrid work models that support a modern workplace "
+            },
+            {
+                "desc": "Competitive salaries with annual reviews"
+            },
+            {
+                "desc": "Creative pathways for internal promotions with opportunities for learning and growth, across our brands and teams"
+            },
+            {
+                "desc": "A supportive network of mentors and colleagues who are passionate about helping you to succeed"
+            }
         ]
     }
 }

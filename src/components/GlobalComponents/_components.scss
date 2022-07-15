@@ -100,3 +100,10 @@ article {
         content: "-";
     }
 }
+
+
+h2, h3 {
+    @include bp(mob-sml) {
+        text-align: center;
+    }
+}

@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Contact from "./pages/contact";
-import Careers from "./pages/careers";
+import About from "./pages/about";
 
 
 class RoutesURL extends Component {
@@ -12,7 +12,7 @@ class RoutesURL extends Component {
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<App />} />
-                        <Route path="/careers" element={<Careers />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </BrowserRouter>

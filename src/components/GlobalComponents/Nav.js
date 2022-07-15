@@ -37,7 +37,7 @@ function Nav() {
 
                 <div className="menu" style={screenSize > 767 ? null : styles}>
                     <ul>
-                        <li><Link to="/careers">Careers</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/contact">Contact Us</Link></li>
                     </ul>
                 </div>
