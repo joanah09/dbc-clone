@@ -11,7 +11,6 @@ function AboutComponent() {
         )
     })
 
-
     console.log(description)
     return (
         <>
@@ -21,7 +20,7 @@ function AboutComponent() {
             
             <h3>You and DBC</h3>
             <figure>
-                <img src="../../images/about/about-img.jpg" />
+                <img src="../../images/banners/contact-banner.jpg" /> 
             </figure>
             <p>Some of the benefits of joining DBC include:</p>
             <article className="about_container--content">

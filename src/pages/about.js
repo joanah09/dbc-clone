@@ -11,7 +11,6 @@ function About() {
             <section className="about_container">
                 <article>
                     <h2>About Us</h2>
-                    <img src="../../images/banners/contact-banner.jpg" />
                     <AboutComponent />
                 </article>
             </section>
