@@ -1,17 +1,14 @@
 
-@import 'components/GlobalComponents/responsive';
-@import 'components/GlobalComponents/components';
-@import 'components/GlobalComponents/nav';
+@import 'scss/responsive';
+@import 'scss/components';
+@import 'components/GlobalComponents/NavbarComponent/nav';
 @import 'components/GlobalComponents/HeaderComponent/header';
 @import 'components/GlobalComponents/FooterComponent/footer';
 
+@import 'components/home/home';
 
-@import 'components/home/info';
-@import 'components/home/HighlightsComponent/highlights';
 @import 'components/GlobalComponents/QuoteComponent/quote';
-@import 'components/home/ServicesComponent/services';
-@import 'components/home/BrandsComponent/brands';
-@import 'components/contact/contact-form';
+@import 'components/contact/contact';
 @import 'components/about/about';
 
 

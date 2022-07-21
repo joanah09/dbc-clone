@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "../components/GlobalComponents/Nav";
+import Nav from "../components/GlobalComponents/NavbarComponent/Nav";
 import Header from "../components/GlobalComponents/HeaderComponent/Header";
 import Footer from "../components/GlobalComponents/FooterComponent/Footer";
-import ContactForm from "../components/contact/contactForm";
+import ContactForm from "../components/contact/contactFormComponent/contactForm";
 
 function Contact() {
     return (
