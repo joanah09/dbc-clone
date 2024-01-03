@@ -14,7 +14,7 @@ function Home() {
             <Header />    
                 <Info />
                 <Highlights />
-                <Quote />
+                {/* <Quote /> */}
                 <Services />
                 <Brands />
             <Footer />
