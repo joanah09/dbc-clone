@@ -23,7 +23,7 @@ function ContactForm() {
     }
 
     return (
-        <form action="https://formsubmit.co/joanah009@gmail.com" method="POST">
+        <form action="https://formsubmit.co/r.origin020599@gmail.com" method="POST">
             <input
                 type="text"
                 placeholder="Full Name"
