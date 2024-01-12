@@ -8,9 +8,9 @@ function Quote() {
     const [testimonials, setTestimonails] = useState([])
     useEffect(() => {
         async function getData() {
-            const res = await fetch("https://testimonialapi.toolcarton.com/api")
+            const res = await fetch("https://dogapi.dog/api/v2/breeds")
             const data = await res.json()
-            setTestimonails(data)
+            setTestimonails(data.data)
         }
         getData()
     }, [])
@@ -26,13 +26,11 @@ function Quote() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1
-   
-      };
+    };
 
     return (
         <section className="quote">
-
-            <h3>Testimonials</h3>
+            <h3>Facts</h3>
             <Slider {...settings}>
                 {testi}
             </Slider>
